@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cafeproject.LoginController">
+   <children>
+      <Label layoutX="168.0" layoutY="103.0" prefHeight="34.0" prefWidth="83.0" text="Name" />
+      <Label layoutX="168.0" layoutY="137.0" prefHeight="34.0" prefWidth="83.0" text="Lastname" />
+      <Label layoutX="168.0" layoutY="171.0" prefHeight="34.0" prefWidth="83.0" text="Username" />
+      <Label layoutX="168.0" layoutY="205.0" prefHeight="34.0" prefWidth="83.0" text="Password" />
+      <TextField fx:id="myRegisterName" layoutX="282.0" layoutY="108.0" onAction="#goToLogin" />
+      <TextField fx:id="myRegisterLastname" layoutX="282.0" layoutY="141.0" onAction="#goToLogin" />
+      <TextField fx:id="myRegisterUsername" layoutX="282.0" layoutY="175.0" onAction="#goToLogin" />
+      <TextField fx:id="myRegisterPassword" layoutX="282.0" layoutY="209.0" onAction="#goToLogin" />
+      <Button fx:id="myRegisterButton" layoutX="256.0" layoutY="271.0" mnemonicParsing="false" onAction="#goToLogin" text="Register" />
+   </children>
+</AnchorPane>
