@@ -39,7 +39,7 @@ public class Staff {
 
     /**
      * retrieves name from staff
-     * @return
+     * @return name
      */
     public String getName() {
         return name;
@@ -55,7 +55,7 @@ public class Staff {
 
     /**
      * retireves lastname from staff
-     * @return
+     * @return lastname
      */
     public String getLastname() {
         return lastname;
@@ -71,7 +71,7 @@ public class Staff {
 
     /**
      * retrieves role from staff
-     * @return
+     * @return role
      */
     public String getRole() {
         return role;
@@ -87,7 +87,7 @@ public class Staff {
 
     /**
      * retrieves hours from staff object
-     * @return
+     * @return hours
      */
     public Integer getHours() {
         return hours;
@@ -147,176 +147,3 @@ public class Staff {
     }
 }
 
-
-
-
-
-
-
-
-
-/**
-public class Staff extends Profile{
-
-    static ArrayList<Staff> staff = new ArrayList<>();
-    static ArrayList<String> menuArray = new ArrayList<>();
-    static ArrayList<String> dailySpecials = new ArrayList<>();
-    static ArrayList<Order> outStandingOrder = new ArrayList<>();
-    private String firstName;
-
-    @Override
-    public String getFirstName() {
-        return firstName;
-    }
-
-    @Override
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    @Override
-    public String getLastName() {
-        return lastName;
-    }
-
-    @Override
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    private String lastName;
-
-    Random rand =new Random();
-    public Integer workingHours;
-    private String role;
-
-    public void setWorkingHours(Integer workingHours) {
-        this.workingHours = workingHours;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    double totalWorkingHrs;
-    public Staff(String firstName, String secondName, String role, Integer hours) {
-        super(firstName,secondName);
-        this.firstName = firstName;
-        this.lastName = secondName;
-        this.role = role;
-        this.workingHours = workingHours;
-
-    }
-
-
-
-
-    public Integer getWorkingHours() {
-        workingHours = 8;
-        return workingHours;
-    }
-
-    public double getTotalWorkingHrs() {
-        return workingHours*rand.nextInt(3);
-    }
-    static void seeMenu(){
-        for (String item:menuArray) {
-            System.out.println(item);
-        }
-    }
-    static void seeDailySpecials(){
-        for (String item:dailySpecials) {
-            System.out.println(item);
-        }
-    }
-
-}
-
-
-
-class Driver extends Staff {
-    Driver(String firstName, String secondName, String role, Integer workingHours){
-        super(firstName, secondName, role, workingHours);
-    }
-}
-
-class Manager extends Staff {
-    Manager(String firstName, String secondName, String role, Integer workingHours){
-        super(firstName, secondName, role, workingHours);
-    }
-
-    void createStaff(String name, String surname, String role){
-        role =  role.toUpperCase();
-        switch (role){
-            case "WAITER":
-                Waiter waiter = new Waiter(name,surname, role, workingHours);
-                staff.add(waiter);
-                break;
-            case "DRIVER":
-                Driver driver = new Driver(name,surname, role, workingHours);
-                staff.add(driver);
-                break;
-            case "CHEF" :
-                Chef chef = new Chef(name,surname, role, workingHours);
-                staff.add(chef);
-                break;
-        }
-
-    }
-
-    void editStaff(String name, String surname, String newName, String newSurname){
-        for(Staff elem : staff){
-            if(elem.getFirstName().equals(name)&&elem.getLastName().equals(surname)){
-                staff.get(staff.indexOf(elem)).setFirstName(newName);
-                staff.get(staff.indexOf(elem)).setLastName(newSurname);
-            }
-        }
-    }
-
-    void deleteStaff(String name, String surname){
-        for(Staff elem : staff){
-            if(elem.getFirstName().equals(name)&&elem.getLastName().equals(surname)){
-                staff.remove(elem);
-            }
-        }
-    }
-
-    void printStaff(){
-        for (Staff worker : staff){
-            System.out.println(worker.getFirstName());
-            System.out.println(worker.getLastName());
-        }
-    }
-}
-
-
-class Chef extends Staff{
-    private static int chefsInRestrant;
-
-    public Chef(String firstName, String secondName, String role, Integer workingHours) {
-        super(firstName, secondName, role, workingHours);
-    }
-    void createDailySpecials(String dishName){
-        dailySpecials.add(dishName);
-    }
-    void createMenuItem(String dishName){
-        menuArray.add(dishName);
-    }
-}
-class Waiter extends Staff {
-    private static int waitersInRestrant;
-
-    public Waiter(String firstName, String secondName, String role, Integer workingHours) {
-        super(firstName,  secondName, role, workingHours);
-        waitersInRestrant++;
-
-    }
-
-    public void order() {
-
-    }
-}**/

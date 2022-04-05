@@ -29,7 +29,7 @@ public class DatabaseController {
      * searchs in the proposed database the proposed argument
      * @param typeOfData
      * @param item
-     * @return
+     * @return found
      * @throws FileNotFoundException
      */
     public static String search(String typeOfData ,  String item) throws FileNotFoundException {
@@ -99,7 +99,7 @@ public class DatabaseController {
 
     /**
      * builds the menu into the menu list
-     * @return
+     * @return food
      * @throws IOException
      */
     public static ArrayList menuBuilder() throws IOException {

@@ -46,7 +46,7 @@ class User extends Profile {
 
     /**
      * retireves address from the current User object
-     * @return
+     * @return address
      */
     public String getAddress() {
         return address;
@@ -54,7 +54,7 @@ class User extends Profile {
 
     /**
      * adds Customer Id to current User object
-     * @return
+     * @return customerId
      */
     public String getCustomerId() {
         String [] alphabet={"A","B","C","D"};
@@ -77,7 +77,7 @@ class User extends Profile {
 
     /**
      * returns most active customer
-     * @return
+     * @return mostActiveUser
      */
     public String mostActiveUser() {
         if(users.size()>0){

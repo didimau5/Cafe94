@@ -28,7 +28,7 @@ public class Table {
 
     /**
      * retrieves seatings in the current object
-     * @return
+     * @return seatings
      */
     public int getSeated() {
         return seatings;
@@ -44,7 +44,7 @@ public class Table {
 
     /**
      * retrieves table number for current Table object
-     * @return
+     * @return tableNumber
      */
     public int getTableNumber() {
         return tableNumber;

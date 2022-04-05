@@ -20,7 +20,7 @@ class TakeAway extends Booking {
 
     /**
      * Calculates pick up time for customer
-     * @return
+     * @return pickUpTime
      */
     public String calculatePickUpTime() {
         String pickUpTime = String.valueOf(getTimeBookedHour()+1)+":"+String.valueOf(getTimeBookedMinute());

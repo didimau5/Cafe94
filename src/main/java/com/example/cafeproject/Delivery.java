@@ -24,7 +24,7 @@ class Delivery extends Booking {
 
     /**
      * Calculates ETA for delivery
-     * @return
+     * @return minDeliveryTime
      */
     public String calculateDeliveryTime() {
         String minDeliveryTime = String.valueOf(getTimeBookedHour()+1)+":"+String.valueOf(getTimeBookedMinute());

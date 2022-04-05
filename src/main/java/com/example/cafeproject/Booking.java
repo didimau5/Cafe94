@@ -35,7 +35,7 @@ public class Booking {
 
     /**
      * retrieves name variable
-     * @return
+     * @return name
      */
     public String getName() {
         return name;
@@ -51,7 +51,7 @@ public class Booking {
 
     /**
      * gets seatings for the booking
-     * @return
+     * @return seatings
      */
     public Integer getSeatings() {
         return seatings;
@@ -67,7 +67,7 @@ public class Booking {
 
     /**
      * retrieves username from the booking
-     * @return
+     * @return username
      */
     public String getUsername() {
         return username;
@@ -83,7 +83,7 @@ public class Booking {
 
     /**
      * retrieves date variable
-     * @return
+     * @return date
      */
     public String getDate() {
         return date;
@@ -99,7 +99,7 @@ public class Booking {
 
     /**
      * retrieves the hour the booking was made
-     * @return
+     * @return timeBookedHour
      */
     public int getTimeBookedHour() {
         return timeBookedHour;
@@ -107,7 +107,7 @@ public class Booking {
 
     /**
      * retrieves the minute the booking was made
-     * @return
+     * @return timeBookedMinute
      */
     public int getTimeBookedMinute() {
         return timeBookedMinute;

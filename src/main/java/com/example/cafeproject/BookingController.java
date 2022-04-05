@@ -118,7 +118,7 @@ public class BookingController implements Initializable {
 
     /**
      * gets date of from the date picker
-     * @return
+     * @return myFormattedDate
      */
     public String getDate() {
         LocalDate myDate = myDatePicker.getValue();
@@ -130,7 +130,7 @@ public class BookingController implements Initializable {
     /**
      * retrieves choice box selection
      * @param myChoiceBox
-     * @return
+     * @return choice
      */
     public String getChoiceBoxChoice(ChoiceBox<String>myChoiceBox) {
     String choice = myChoiceBox.getValue();

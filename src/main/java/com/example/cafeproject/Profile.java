@@ -22,7 +22,7 @@ public class Profile {
 
     /**
      * get firstname from profile
-     * @return
+     * @return firstName
      */
     public String getFirstName() {
         return firstName;
@@ -46,7 +46,7 @@ public class Profile {
 
     /**
      * retrieves lastname from profile
-     * @return
+     * @return lastName
      */
     public String getLastName() {
         return lastName;
